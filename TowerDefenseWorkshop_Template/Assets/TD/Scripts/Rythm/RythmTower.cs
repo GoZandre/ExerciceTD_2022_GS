@@ -8,18 +8,40 @@ namespace GSGD1
 
     public class RythmTower : MonoBehaviour
     {
-        [SerializeField]
-        private float _timePerBeat = 0.0f;
+       
 
 
         private void Update()
         {
+
+
          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
            if (Input.GetButtonDown("TempoPress"))
            {
                Debug.Log("Pressed");
+                          // un scrit qui dit : quand j'ai recu l'info que je suis cliquable, indiquer visuellement que je suis cliquable et si on me clique dessus je fais le boost de ouf 
+
 
            }
+
+
+
+
         }
     }
 

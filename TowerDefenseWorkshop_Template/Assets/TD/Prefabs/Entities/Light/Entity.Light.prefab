@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2942146037294568418}
   - component: {fileID: 2942146037294568419}
   - component: {fileID: 3974716673252989215}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Entity.Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03baadd57e799d94eafbd1966c13ac0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _destroyIfGiveDamage: 1
   _damage: 1
 --- !u!1 &2942146037963372806
 GameObject:
@@ -108,7 +107,7 @@ GameObject:
   - component: {fileID: 2942146037963372802}
   - component: {fileID: 2942146037963372801}
   - component: {fileID: 2942146037963372800}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -202,7 +201,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2942146038031326620}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -238,7 +237,7 @@ GameObject:
   - component: {fileID: 2942146038736970682}
   - component: {fileID: 2942146038736970681}
   - component: {fileID: 2942146038736970680}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
