@@ -37,13 +37,23 @@
 				{
 					transform.position = firstWaypoint.position;
 				}
+
 			}
+
 		}
 
 		private void Update()
 		{
 			if (_path == null || _currentPathIndex >= _path.Waypoints.Count)
 			{
+				if (_currentPathIndex >= _path.Waypoints.Count)
+				{
+					Damager damager = GetComponent<Damager>();
+					if (damager != null)
+					{
+						damager.DoDamage();
+					}
+				}
 				return;
 			}
 
