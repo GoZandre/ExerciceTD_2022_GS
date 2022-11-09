@@ -1,18 +1,36 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class RythmTower : MonoBehaviour
+namespace GSGD1
 {
-    // Start is called before the first frame update
-    void Start()
+
+
+    using System.Collections;
+    using System.Collections.Generic;
+    using UnityEngine;
+
+    public class RythmTower : MonoBehaviour
     {
-        
+        [SerializeField]
+        private float _timePerBeat = 0.0f;
+
+
+        private void Update()
+        {
+         
+           if (Input.GetButtonDown("TempoPress"))
+           {
+               Debug.Log("Pressed");
+
+           }
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
+
+
+
         
-    }
+
+
+
+
+
+
 }
