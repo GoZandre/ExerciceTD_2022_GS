@@ -7,14 +7,17 @@ namespace GSGD1
 
     public class VictoryCondition : MonoBehaviour
     {
-        public void Quit()
+
+        public void PlayerWin()
         {
-            //Debug.Log("TryingToQuit");
-#if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPlaying = false;
-#else
-        Application.Quit();
-#endif
+
         }
+
+        public void PlayerLose()
+        {
+
+        }
+
+
     }
 }

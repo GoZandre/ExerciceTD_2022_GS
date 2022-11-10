@@ -15,8 +15,21 @@ namespace GSGD1
 		[SerializeField]
 		private PlayerStats _playerStats = null;
 
+		[SerializeField]
+		private LevelManager _levelManager = null;
+
+		[SerializeField]
+		private VictoryCondition VictoryCondition = null;
+
+		[SerializeField]
+		private Tempo _tempo = null;
+
 		public PlayerPickerController PlayerPickerController => _playerPickerController;
 		public SpawnerManager SpawnerManager => _spawnerManager;
 		public PlayerStats PlayerStats => _playerStats;	
+		public Tempo Tempo => _tempo;
+		public LevelManager LevelManager => _levelManager;
+		public VictoryCondition victoryCondition => VictoryCondition;
+
 	}
 }

@@ -15,11 +15,11 @@ namespace GSGD1
             _playerHealth = _playerHealth - damage;
             if (_playerHealth <= 0)
             {
-                Debug.Log("deadlifethishit");
+                Debug.Log("PlayerIsDead");
                 VictoryCondition victoryCondition = GetComponent<VictoryCondition>();
                 if (victoryCondition != null)
                 {
-                    victoryCondition.Quit();
+                    victoryCondition.PlayerLose();
                 }
             }
         }
