@@ -16,11 +16,11 @@ namespace GSGD1
             if (_playerHealth <= 0)
             {
                 Debug.Log("PlayerIsDead");
-                VictoryCondition victoryCondition = GetComponent<VictoryCondition>();
-                if (victoryCondition != null)
-                {
-                    victoryCondition.PlayerLose();
-                }
+                LevelReferences.Instance.victoryCondition.PlayerLose();
+                //if (victoryCondition != null)
+                //{
+                //    victoryCondition.PlayerLose();
+                //}
             }
         }
 
