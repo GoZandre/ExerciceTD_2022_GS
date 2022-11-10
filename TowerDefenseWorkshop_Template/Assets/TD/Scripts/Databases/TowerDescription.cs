@@ -16,9 +16,13 @@ namespace GSGD1
 		[SerializeField]
 		private Color _iconColor = Color.white;
 
+		[SerializeField]
+		private int _fireTempo = 0;
+
 		public Tower Prefab => _prefab;
 		public Sprite Icon => _icon;
 		public Color IconColor => _iconColor;
+		public int FireTempo => _fireTempo;
 
 		public Tower Instantiate()
 		{

@@ -7,6 +7,11 @@
 		[SerializeField]
 		private AWeapon _weapon = null;
 
+		public AWeapon getAWeapon
+        {
+            get { return _weapon; }
+        }
+
 		[SerializeField]
 		private float _rotationSpeed = 5f;
 
@@ -23,17 +28,12 @@
 			transform.rotation = Quaternion.Slerp(transform.rotation, _lastLookRotation, _rotationSpeed * Time.deltaTime);
 		}
 
-		public void Fire()
-		{
-			_weapon.Fire();
-		}
-
 		public void LookAtAndFire(Vector3 position)
 		{
 			LookAt(position);
 			if (Quaternion.Angle(_lastLookRotation, transform.rotation) < _minAngleToFire)
 			{
-				Fire();
+				_weapon.Fire();
 			}
 		}
 

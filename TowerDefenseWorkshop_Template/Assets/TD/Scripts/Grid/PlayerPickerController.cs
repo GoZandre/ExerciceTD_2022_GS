@@ -18,6 +18,9 @@ namespace GSGD1
 		[System.NonSerialized]
 		private bool _isActive = false;
 
+		[SerializeField]
+		private Tempo _tempo;
+
 		public void Activate(bool isActive)
 		{
 			_isActive = isActive;
@@ -26,9 +29,14 @@ namespace GSGD1
 
 		public void ActivateWithGhost(IPickerGhost ghost)
 		{
-			_ghost = ghost;
+			_ghost = ghost;	
 			Activate(true);
 		}
+
+		public void SetGhostDescription(TowerDescription towerDesription)
+        {
+			_ghost.GetTransform().transform.GetComponent<Tower>().getWeaponController.getAWeapon.SetCurrentBeat(towerDesription.FireTempo);
+        }
 
 		public void DestroyGhost()
 		{

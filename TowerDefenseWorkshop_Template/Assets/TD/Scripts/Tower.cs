@@ -16,12 +16,16 @@
 		[SerializeField]
 		private DamageableDetector _damageableDetector = null;
 
+		public WeaponController getWeaponController
+        {
+			get { return _weaponController; }
+        }
+
 		private void Awake()
 		{
 			enabled = false;
 		}
-
-		public void Enable(bool isEnabled)
+        public void Enable(bool isEnabled)
 		{
 			enabled = isEnabled;
 		}
