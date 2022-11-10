@@ -15,3 +15,4 @@ MonoBehaviour:
   _prefab: {fileID: 302692793403659937, guid: 28efab7630ebbd3488efbf4c9b317e19, type: 3}
   _icon: {fileID: 21300000, guid: 782b88c042b68c84886d3da8649dfa5a, type: 3}
   _iconColor: {r: 0.5647059, g: 1, b: 0.13725491, a: 1}
+  _fireTempo: 1
