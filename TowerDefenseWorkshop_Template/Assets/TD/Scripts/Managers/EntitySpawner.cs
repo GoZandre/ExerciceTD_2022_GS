@@ -37,7 +37,12 @@
 
 		private WaveEntity InstantiateEntity(WaveEntity entityPrefab)
 		{
+			Debug.Log("Entity Spawned");
+
 			WaveEntity entityInstance = Instantiate(entityPrefab, _instancesRoot);
+
+			LevelReferences.Instance.EnemiesList.Add(entityInstance);
+
 			_runtimeWaveEntities.Add(entityInstance);
 			EntitySpawned?.Invoke(this, entityInstance);
 			return entityInstance;

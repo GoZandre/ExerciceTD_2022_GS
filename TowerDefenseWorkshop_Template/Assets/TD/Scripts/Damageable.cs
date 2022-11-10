@@ -44,11 +44,14 @@
 			if (_health <= 0)
 			{
 				_damageTaken?.Invoke(this, _health, damage);
+				LevelReferences.Instance.EnemiesList.Remove(transform.GetComponent<WaveEntity>());
+				LevelReferences.Instance.victoryCondition.TestWin.Invoke();
 
 				if (_destroyIfKilled == true)
 				{
 					DoDestroy();
 				}
+
 			}
 		}
 

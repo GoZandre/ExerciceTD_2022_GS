@@ -33,7 +33,7 @@
 			LookAt(position);
 			if (Quaternion.Angle(_lastLookRotation, transform.rotation) < _minAngleToFire)
 			{
-				_weapon.Fire();
+				//_weapon.Fire();
 			}
 		}
 
