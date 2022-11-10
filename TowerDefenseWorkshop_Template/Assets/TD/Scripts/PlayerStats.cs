@@ -3,16 +3,19 @@ namespace GSGD1
     using System.Collections;
     using System.Collections.Generic;
     using UnityEngine;
+    using UnityEngine.Events;
 
     public class PlayerStats : MonoBehaviour
     {
         [SerializeField]
         private int _playerHealth = 1;
 
+        public UnityEvent DamageTaken;
 
         public void TakeDamage(int damage)
         {
             _playerHealth = _playerHealth - damage;
+            DamageTaken.Invoke();
             if (_playerHealth <= 0)
             {
                 Debug.Log("PlayerIsDead");
@@ -31,7 +34,10 @@ namespace GSGD1
             }
         }
 
-
+        public int GetHealth()
+        {
+            return _playerHealth;
+        }
     }
 
 }
