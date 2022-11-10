@@ -13,6 +13,7 @@
 		None,
 		Light,
 		Heavy,
+		Boss,
 		Speedy
 	}
 

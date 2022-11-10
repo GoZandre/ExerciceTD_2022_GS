@@ -18,27 +18,9 @@ MonoBehaviour:
       _extraDurationAfterSpawned: 0
     - _entityType: 1
       _extraDurationAfterSpawned: 0
-    - _entityType: 1
-      _extraDurationAfterSpawned: 0
-    - _entityType: 1
-      _extraDurationAfterSpawned: 0
-    - _entityType: 1
-      _extraDurationAfterSpawned: 0
-    - _entityType: 1
-      _extraDurationAfterSpawned: 0
-    - _entityType: 1
-      _extraDurationAfterSpawned: 0
-    - _entityType: 1
-      _extraDurationAfterSpawned: 0
     - _entityType: 2
       _extraDurationAfterSpawned: 0
-    - _entityType: 2
-      _extraDurationAfterSpawned: 0
-    - _entityType: 2
-      _extraDurationAfterSpawned: 0
-    - _entityType: 2
-      _extraDurationAfterSpawned: 0
-    _durationBetweenSpawnedEntity: 1
+    _durationBetweenSpawnedEntity: 2
   - _waveEntitiesDescriptions:
     - _entityType: 1
       _extraDurationAfterSpawned: 0
@@ -73,5 +55,47 @@ MonoBehaviour:
     - _entityType: 3
       _extraDurationAfterSpawned: 0
     _durationBetweenSpawnedEntity: 1
-  _waitingDurationBefore: 0
+  - _waveEntitiesDescriptions:
+    - _entityType: 1
+      _extraDurationAfterSpawned: 0
+    - _entityType: 1
+      _extraDurationAfterSpawned: 0
+    - _entityType: 1
+      _extraDurationAfterSpawned: 0
+    - _entityType: 1
+      _extraDurationAfterSpawned: 0
+    _durationBetweenSpawnedEntity: 3
+  - _waveEntitiesDescriptions:
+    - _entityType: 1
+      _extraDurationAfterSpawned: 0
+    - _entityType: 1
+      _extraDurationAfterSpawned: 0
+    - _entityType: 1
+      _extraDurationAfterSpawned: 0
+    - _entityType: 3
+      _extraDurationAfterSpawned: 0
+    _durationBetweenSpawnedEntity: 1.5
+  - _waveEntitiesDescriptions:
+    - _entityType: 1
+      _extraDurationAfterSpawned: 0
+    - _entityType: 1
+      _extraDurationAfterSpawned: 0
+    - _entityType: 1
+      _extraDurationAfterSpawned: 0
+    - _entityType: 1
+      _extraDurationAfterSpawned: 0
+    - _entityType: 1
+      _extraDurationAfterSpawned: 0
+    _durationBetweenSpawnedEntity: 1
+  - _waveEntitiesDescriptions:
+    - _entityType: 1
+      _extraDurationAfterSpawned: 0
+    - _entityType: 1
+      _extraDurationAfterSpawned: 0
+    - _entityType: 1
+      _extraDurationAfterSpawned: 0
+    - _entityType: 3
+      _extraDurationAfterSpawned: 0
+    _durationBetweenSpawnedEntity: 0.5
+  _waitingDurationBefore: 2
   _waitingDurationAfter: 5
