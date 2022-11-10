@@ -17,6 +17,13 @@ namespace GSGD1
             {
                 Debug.Log("PlayerIsDead");
                 LevelReferences.Instance.victoryCondition.PlayerLose();
+                Controller controllerTest = GetComponent<Controller>();
+
+                if (controllerTest != null)
+                {
+                    controllerTest.enabled = false;
+                }
+
                 //if (victoryCondition != null)
                 //{
                 //    victoryCondition.PlayerLose();

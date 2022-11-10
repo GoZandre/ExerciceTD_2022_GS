@@ -53,7 +53,7 @@ namespace GSGD1
         {
             if(LevelReferences.Instance.SpawnerManager.getWaveIndex >= _levelWaves.Waves.Count - 1)
             {
-                if (LevelReferences.Instance.EnemiesList.Count == 0)
+                if (LevelReferences.Instance.EnemiesList.Count == 0 && _defeatCanvas.enabled == false)
                 {
                     PlayerWin();
                 }

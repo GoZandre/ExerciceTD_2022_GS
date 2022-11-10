@@ -7,7 +7,7 @@ public class LevelManager : MonoBehaviour
 {
     public void LoadScene(string sceneName)
     {
-        SceneManager.LoadScene(sceneName, LoadSceneMode.Additive);
+        SceneManager.LoadScene(sceneName);
     }
 
     public void QuitGame()
