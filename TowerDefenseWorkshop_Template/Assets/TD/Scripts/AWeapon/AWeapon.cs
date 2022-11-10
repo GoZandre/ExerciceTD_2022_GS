@@ -8,7 +8,6 @@
 		[SerializeField]
 		private Timer _timer = null;
 
-        [SerializeField]
 		private Tempo _tempo;
 
 		[SerializeField]

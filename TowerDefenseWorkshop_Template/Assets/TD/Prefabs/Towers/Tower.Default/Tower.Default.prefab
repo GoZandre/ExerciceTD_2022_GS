@@ -589,8 +589,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _weapon: {fileID: 302692792590252284}
-  _rotationSpeed: 50
-  _minAngleToFire: 5
+  _rotationSpeed: 10
+  _minAngleToFire: 10
 --- !u!114 &302692792590252284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -606,7 +606,10 @@ MonoBehaviour:
   _timer:
     _duration: 1
     _stopWhenCompleted: 1
+  _currentBeat: 0
   _projectile: {fileID: 1697648429471405643, guid: a1a1140bdc5abfd4b923056be28d793a,
+    type: 3}
+  _projectileBoost: {fileID: 1697648429471405643, guid: 65e6e51f948dbf1478e50c88ef29d282,
     type: 3}
   _projectileAnchor: {fileID: 302692792940769431}
 --- !u!1 &302692792940769428
@@ -651,6 +654,7 @@ GameObject:
   - component: {fileID: 302692793403659940}
   - component: {fileID: 302692793403659937}
   - component: {fileID: 302692793403659942}
+  - component: {fileID: 6026911146321665621}
   - component: {fileID: 302692793403659943}
   - component: {fileID: 302692793403659936}
   m_Layer: 0
@@ -703,6 +707,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2a1ba8619da3ff498c03a05e4bde244, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6026911146321665621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302692793403659941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eef034c2ccea4c49b82cb872f9af4a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _boostTimeWindow: 0.25
 --- !u!135 &302692793403659943
 SphereCollider:
   m_ObjectHideFlags: 0
