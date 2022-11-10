@@ -24,12 +24,16 @@ namespace GSGD1
 		[SerializeField]
 		private Tempo _tempo = null;
 
+		[SerializeField]
+		private List<WaveEntity> _enemiesList = new List<WaveEntity>();
+
 		public PlayerPickerController PlayerPickerController => _playerPickerController;
 		public SpawnerManager SpawnerManager => _spawnerManager;
 		public PlayerStats PlayerStats => _playerStats;	
 		public Tempo Tempo => _tempo;
 		public LevelManager LevelManager => _levelManager;
 		public VictoryCondition victoryCondition => VictoryCondition;
+		public List<WaveEntity> EnemiesList => _enemiesList;
 
 	}
 }

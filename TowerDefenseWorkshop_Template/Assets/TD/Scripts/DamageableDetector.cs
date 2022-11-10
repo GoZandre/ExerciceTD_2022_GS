@@ -31,12 +31,16 @@
 			int shortestDistanceIndex = 0;
 			for (int i = 0, length = _damageablesInRange.Count; i < length; i++)
 			{
-				var distance = (_damageablesInRange[i].transform.position - transform.position).sqrMagnitude;
-				if (distance < shortestDistance)
+				if(_damageablesInRange[i] != null)
 				{
-					shortestDistance = distance;
-					shortestDistanceIndex = i;
-				}
+                    var distance = (_damageablesInRange[i].transform.position - transform.position).sqrMagnitude;
+                    if (distance < shortestDistance)
+                    {
+                        shortestDistance = distance;
+                        shortestDistanceIndex = i;
+                    }
+                }
+				
 			}
 
 			return _damageablesInRange[shortestDistanceIndex];
