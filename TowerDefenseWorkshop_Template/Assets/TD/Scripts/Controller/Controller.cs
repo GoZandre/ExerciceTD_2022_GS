@@ -124,13 +124,13 @@ public class Controller : MonoBehaviour
         float mouseWheelInput = Input.GetAxis("Mouse ScrollWheel");
         if (mouseWheelInput > 0 && _zoomStep < _zoomNumber && Time.time >= _lastZoomTime + _zoomCD)
         {
-            _camera.transform.position = _camera.transform.position + _camera.transform.forward * _speedZoom;
+            transform.position = transform.position + _camera.transform.forward * _speedZoom;
             _zoomStep++;
             _lastZoomTime = Time.time;
         }
         if (mouseWheelInput < 0 && _zoomStep > 0 && Time.time >= _lastZoomTime + _zoomCD)
         {
-            _camera.transform.position = _camera.transform.position + _camera.transform.forward * -_speedZoom;
+            transform.position = transform.position + _camera.transform.forward * -_speedZoom;
             _zoomStep--;
             _lastZoomTime = Time.time;
         }
